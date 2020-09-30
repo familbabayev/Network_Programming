@@ -1,12 +1,31 @@
 # Client-Server based UDP basic console application
 
-# Scenario
-The Spotify regional server warehouse provides music streaming services for the billions of
-clients 24/7. Spotify servers responding time are depend on clients load number. Because of this reason,
-the clients must wait for responding with regarding the next time schedule:
-First interval: Between 12:00 – 17:00 the maximum wait time must be 2 seconds
-Second Interval: After the 17:00 till the 23:59 the maximum wait time must be for 4 seconds
-Third Interval: After the 23:59 till the 12:00 of the next day the waiting time must be 1 second
-The exponential backoff of these intervals must be increased by the next factors:
-For the first and third intervals: doubles each iteration
-For the second interval: triples on each iteration
+## Scenario
+The Spotify regional server warehouse provides music streaming services for the billions of clients 24/7. Spotify servers responding time are depend on clients load number. Because of this reason, the clients must wait for responding with regarding the next time schedule:
+
+* First Interval: From 00:00 till 11:59 the maximum wait time is 1 second
+
+* Second interval: From 12:00 till 16:59 the maximum wait time is 2 seconds
+
+* Third Interval: From 17:00 till 23:59 the maximum wait time is 4 seconds
+
+The backoffs of these intervals are increased exponentially by next factors:
+
+* For the first and third intervals: doubles each iteration
+* For the second interval: triples on each iteration
+
+## Installation
+```
+git clone https://github.com/familbabayev/Network_Programming/tree/master/Lab1(UDP_Backoff)
+```
+Application uses built-in python3 packages. No additional requirements.
+
+## Usage
+For server:
+```
+python3 UDP_Backoff_OOP.py server ""
+```
+For client:
+```
+python3 UDP_Backoff_OOP.py client [hostname]
+```

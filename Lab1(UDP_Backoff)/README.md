@@ -18,14 +18,15 @@ The backoffs of these intervals are increased exponentially by next factors:
 ```
 git clone https://github.com/familbabayev/Network_Programming/tree/master/Lab1(UDP_Backoff)
 ```
-Application uses built-in python3 packages. No additional requirements.
+Application uses built-in python 3.7.4 packages. No additional requirements.
 
 ## Usage
 For server:
 ```
-python3 UDP_Backoff_OOP.py server ""
+python3 UDP_Backoff_OOP.py server "" [-p]
 ```
 For client:
 ```
-python3 UDP_Backoff_OOP.py client [hostname]
+python3 UDP_Backoff_OOP.py client [hostname] [-p]
 ```
+The default value for port number is 1060.  

@@ -29,4 +29,4 @@ For client:
 ```
 python3 UDP_Backoff_OOP.py client [hostname] [-p]
 ```
-The default value for port number is 1060.  
+The default value(1060) for port number is assigned by the program, so you can omit it.  

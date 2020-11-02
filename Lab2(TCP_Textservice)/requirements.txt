@@ -1,0 +1,1 @@
+Application uses built-in python3.7.4 packages. No additional requirements. 

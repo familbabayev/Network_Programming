@@ -36,3 +36,4 @@ For client:
 ```
 python3 web_scraper.py client [HOSTNAME] [-PORT] -p [Webpage URL]
 ```
+You can provide [Webpage URL] both with 'http(s)://' or without it.

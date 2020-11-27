@@ -90,7 +90,10 @@ def main():
     clss = choices[args.role]
     
     if args.role == "client":
-        clss(args.host, args.port).run(args.p)
+        if "http://" in args.p or "https://" in args.p:
+            clss(args.host, args.port).run(args.p)
+        else:
+            clss(args.host, args.port).run(f"http://{args.p}")
     else:
         clss(args.host, args.port).run()
 

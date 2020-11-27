@@ -2,6 +2,7 @@
 
 ## Scenario
 You as a software developer must create the client-server-based console app “web_scraper”. With the next abilities:
+
 **Get statistical data:**
 * Calculate the number of pictures in the webpage
 * Calculate the number of the leaf paragraphs in the webpage
